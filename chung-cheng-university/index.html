@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover National Chung Cheng University: learning, research, and campus life in Minxiong, Chiayi, Taiwan.">
+    <title>National Chung Cheng University | Campus Notes</title>
+    <style>
+        :root { --ink: #172b35; --blue: #1d6570; --gold: #e2a63b; --mist: #edf4f0; --paper: #fffdf8; }
+        * { box-sizing: border-box; }
+        body { margin: 0; color: var(--ink); background: var(--paper); font-family: Georgia, "Noto Serif", serif; line-height: 1.8; }
+        .topbar { padding: 18px 7vw; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #d8e1db; }
+        .brand { color: var(--blue); font-weight: bold; letter-spacing: .08em; }
+        nav a { color: var(--ink); text-decoration: none; margin-left: 25px; font-family: Arial, sans-serif; font-size: .85rem; }
+        .hero { min-height: 68vh; padding: 11vh 7vw; color: white; display: grid; align-items: end; background: linear-gradient(90deg, rgba(10, 39, 43, .86), rgba(10, 39, 43, .18)), url("https://images.unsplash.com/photo-1564981797816-1043664bf78d?auto=format&fit=crop&w=1800&q=85") center/cover; }
+        .hero h1 { max-width: 720px; margin: 0; font-size: clamp(2.7rem, 7vw, 6.5rem); line-height: 1.04; letter-spacing: -.03em; }
+        .hero p { max-width: 560px; margin: 26px 0 0; font-size: 1.1rem; }
+        main { max-width: 1180px; margin: auto; padding: 85px 7vw; }
+        .intro { display: grid; grid-template-columns: 1fr 1.35fr; gap: 70px; align-items: start; }
+        .eyebrow { color: var(--gold); font: bold .76rem Arial, sans-serif; letter-spacing: .18em; text-transform: uppercase; }
+        h2 { margin: 10px 0 20px; color: var(--blue); font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1.1; }
+        article p { margin-top: 0; }
+        .facts { margin-top: 42px; display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #b9cdc4; }
+        .fact { padding: 22px 18px 18px 0; border-right: 1px solid #b9cdc4; }
+        .fact:last-child { border: 0; padding-left: 18px; }
+        .fact strong { display: block; color: var(--blue); font-size: 1.8rem; }
+        .fact span { font: .8rem Arial, sans-serif; }
+        .campus { margin-top: 80px; padding-top: 70px; border-top: 1px solid #d8e1db; display: grid; grid-template-columns: .9fr 1.1fr; gap: 45px; }
+        .map { min-height: 360px; width: 100%; border: 0; filter: saturate(.75); }
+        .note { padding: 25px; background: var(--mist); }
+        .note h3 { margin-top: 0; color: var(--blue); }
+        footer { padding: 25px 7vw; background: var(--ink); color: #dce9e3; font: .78rem Arial, sans-serif; }
+        @media (max-width: 720px) { .topbar { align-items: flex-start; } nav a { margin-left: 10px; } .intro, .campus { grid-template-columns: 1fr; gap: 28px; } .facts { grid-template-columns: 1fr; } .fact, .fact:last-child { border-right: 0; border-bottom: 1px solid #b9cdc4; padding: 14px 0; } main { padding-top: 55px; } }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">CCU / CHIAYI</div>
+        <nav aria-label="Main navigation"><a href="#story">Campus story</a><a href="#visit">Visit</a></nav>
+    </header>
+    <section class="hero">
+        <div>
+            <p class="eyebrow">National Chung Cheng University</p>
+            <h1>Meet Chung Cheng among green paths and big ideas.</h1>
+            <p>A research university in Chiayi, Taiwan, where knowledge reaches beyond the classroom into the hills, community, and everyday observation.</p>
+        </div>
+    </section>
+    <main>
+        <section id="story" class="intro">
+            <div>
+                <p class="eyebrow">A place to think</p>
+                <h2>A campus can be a way of learning.</h2>
+            </div>
+            <article>
+                <p>National Chung Cheng University sits in Minxiong Township, Chiayi County. Its generous scale, buildings, lawns, and seasonal scenery create a calm and focused atmosphere. For many students, CCU is more than a place to earn a degree; it is a journey toward forming an independent point of view. The humanities, social sciences, engineering, management, and education meet here, allowing a conversation to move from a class into a club, a laboratory, or an evening walk across campus.</p>
+                <p>The university values research and international exchange, while encouraging students to apply what they learn to real-world questions. You might prepare a report in the library, observe new technology at a research center, and then discuss a lecture with friends over dinner. This unhurried but energetic routine develops more than professional skills: it builds listening, collaboration, questioning, and problem-solving habits. For anyone curious about university life in Taiwan, CCU offers an entry point far from urban noise but full of ideas in motion.</p>
+            </article>
+        </section>
+        <section class="facts" aria-label="Campus facts">
+            <div class="fact"><strong>1989</strong><span>Year founded</span></div>
+            <div class="fact"><strong>Chiayi</strong><span>Home city</span></div>
+            <div class="fact"><strong>Open</strong><span>Interdisciplinary spirit</span></div>
+        </section>
+        <section id="visit" class="campus">
+            <div class="note"><p class="eyebrow">Find us</p><h3>Start in Minxiong and walk into campus.</h3><p>Check the university's announcements and venue hours before visiting. The embedded map makes it easy for first-time visitors to locate Chung Cheng University.</p></div>
+            <iframe class="map" title="Map of National Chung Cheng University" src="https://maps.google.com/maps?q=National%20Chung%20Cheng%20University%20Taiwan&output=embed" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer>© 2026 Campus Notes · A student-made introduction to Chung Cheng University, Taiwan.</footer>
+</body>
+</html>
